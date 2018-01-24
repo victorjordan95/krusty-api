@@ -24,7 +24,6 @@ public class BankService {
                 .forEach(bank ->
                 dtos.add(
                         modelMapper.map(bank, BankDTO.class)));
-
         return dtos;
     }
 
