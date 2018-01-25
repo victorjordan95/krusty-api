@@ -13,7 +13,7 @@ import java.util.List;
 public class BankDetailsController {
 
     @Autowired
-    private BankDetailsService service;
+    private BankDetailsService<BankDetailsDTO> service;
 
     @RequestMapping("")
     public List<BankDetailsDTO> findAll() {
