@@ -9,20 +9,21 @@ import javax.persistence.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity(name = "Bank")
-public class Bank {
+@Entity(name = "Bank_Details")
+public class BankDetails {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Integer id;
 
-    @Column(name = "code")
-    private String code;
+    @OneToOne
+    @JoinColumn(name = "bank_id")
+    private Bank bank;
 
-    @Column(name = "name")
-    private String name;
+    @Column(name = "agency")
+    private String agency;
 
-    @OneToOne(mappedBy = "bank")
-    private BankDetails bankDetails;
+    @Column(name = "account_number")
+    private String accountNumber;
 }
