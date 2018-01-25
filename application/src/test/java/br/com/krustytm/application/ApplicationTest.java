@@ -10,9 +10,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class ApplicationTest {
 
     @Test
-    public void applicationContextLoaded() {
-
-    }
+    public void applicationContextLoaded() { }
 
     @Test
     public void applicationContextTest() {
