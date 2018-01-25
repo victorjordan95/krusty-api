@@ -16,7 +16,7 @@ import static org.mockito.Matchers.anyInt;
 import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
-public class BankServiceImplTest {
+public class BankServiceTest {
 
     @Mock
     private BankRepository repository;
