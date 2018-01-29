@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-    <artifactId>service</artifactId>
+    <artifactId>business</artifactId>
     <groupId>br.com.krustytm</groupId>
     <version>1.0.0</version>
 
@@ -37,8 +37,13 @@
         </dependency>
         <dependency>
             <groupId>br.com.krustytm</groupId>
-            <artifactId>business</artifactId>
+            <artifactId>model</artifactId>
             <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.modelmapper</groupId>
+            <artifactId>modelmapper</artifactId>
+            <version>1.1.0</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>

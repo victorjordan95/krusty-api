@@ -7,12 +7,8 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class UserDTO {
+public class RoleDTO {
 
     private Integer id;
     private String name;
-    private SecurityDetailsDTO securityDetails;
-    private ContactDetailsDTO contactDetails;
-    private BankDetailsDTO bankDetails;
-    private AddressDetailsDTO addressDetails;
 }

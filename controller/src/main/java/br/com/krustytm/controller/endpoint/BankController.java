@@ -14,15 +14,11 @@ import java.util.List;
 public class BankController {
 
     @Autowired
-    private BankService<BankDTO> service;
+    private BankService service;
 
     @RequestMapping("")
     public List<BankDTO> findAll() {
         return service.findAll();
     }
 
-    @RequestMapping("/{id}")
-    public BankDTO findById(@PathVariable final Integer id) {
-        return service.findById(id);
-    }
 }
