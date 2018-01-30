@@ -9,24 +9,20 @@ import javax.persistence.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity(name = "Bank_Details")
-public class BankDetails {
+@Entity(name = "Contact_Details")
+public class ContactDetails {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Integer id;
 
-    @OneToOne
-    @JoinColumn(name = "bank_id")
-    private Bank bank;
+    @Column(name = "phone")
+    private String phone;
 
-    @Column(name = "agency")
-    private String agency;
+    @Column(name = "email")
+    private String email;
 
-    @Column(name = "account_number")
-    private String accountNumber;
-
-    @OneToOne(mappedBy = "bankDetails")
+    @OneToOne(mappedBy = "contactDetails")
     private User user;
 }

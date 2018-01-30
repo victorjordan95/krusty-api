@@ -40,4 +40,7 @@ public class AddressDetails {
 
     @Column(name = "zip_code")
     private String zipCode;
+
+    @OneToOne(mappedBy = "addressDetails")
+    private User user;
 }

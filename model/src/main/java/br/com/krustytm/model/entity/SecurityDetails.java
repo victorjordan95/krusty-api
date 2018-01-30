@@ -9,24 +9,24 @@ import javax.persistence.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity(name = "Bank_Details")
-public class BankDetails {
+@Entity(name = "Security_Details")
+public class SecurityDetails {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Integer id;
 
+    @Column(name = "username")
+    private String username;
+
+    @Column(name = "password")
+    private String password;
+
     @OneToOne
-    @JoinColumn(name = "bank_id")
-    private Bank bank;
+    @JoinColumn(name = "security_role_id")
+    private SecurityRole securityRole;
 
-    @Column(name = "agency")
-    private String agency;
-
-    @Column(name = "account_number")
-    private String accountNumber;
-
-    @OneToOne(mappedBy = "bankDetails")
+    @OneToOne(mappedBy = "securityDetails")
     private User user;
 }
