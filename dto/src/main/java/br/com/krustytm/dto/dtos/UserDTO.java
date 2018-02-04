@@ -11,6 +11,7 @@ public class UserDTO {
 
     private Integer id;
     private String name;
+    private Long cpf;
     private SecurityDetailsDTO securityDetails;
     private ContactDetailsDTO contactDetails;
     private BankDetailsDTO bankDetails;

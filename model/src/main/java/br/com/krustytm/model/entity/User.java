@@ -20,6 +20,9 @@ public class User {
     @Column(name = "name")
     private String name;
 
+    @Column(name = "cpf")
+    private Long cpf;
+
     @OneToOne
     @JoinColumn(name = "security_details_id")
     private SecurityDetails securityDetails;
