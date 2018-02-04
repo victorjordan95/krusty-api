@@ -38,4 +38,7 @@ public class User {
     @OneToOne
     @JoinColumn(name = "address_details_id")
     private AddressDetails addressDetails;
+
+    @OneToOne(mappedBy = "user")
+    private Task task;
 }
