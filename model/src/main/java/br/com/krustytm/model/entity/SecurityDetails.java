@@ -27,6 +27,7 @@ public class SecurityDetails {
     @JoinColumn(name = "security_role_id")
     private SecurityRole securityRole;
 
-    @OneToOne(mappedBy = "securityDetails")
+    @OneToOne
+    @JoinColumn(name = "user_id")
     private User user;
 }

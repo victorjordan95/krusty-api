@@ -27,6 +27,7 @@ public class BankDetails {
     @Column(name = "account_number")
     private String accountNumber;
 
-    @OneToOne(mappedBy = "bankDetails")
+    @OneToOne
+    @JoinColumn(name = "user_id")
     private User user;
 }

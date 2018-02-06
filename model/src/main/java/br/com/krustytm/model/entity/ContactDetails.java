@@ -23,6 +23,7 @@ public class ContactDetails {
     @Column(name = "email")
     private String email;
 
-    @OneToOne(mappedBy = "contactDetails")
+    @OneToOne
+    @JoinColumn(name = "user_id")
     private User user;
 }

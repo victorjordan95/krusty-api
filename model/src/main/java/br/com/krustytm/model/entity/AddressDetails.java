@@ -41,6 +41,7 @@ public class AddressDetails {
     @Column(name = "zip_code")
     private String zipCode;
 
-    @OneToOne(mappedBy = "addressDetails")
+    @OneToOne()
+    @JoinColumn(name = "user_id")
     private User user;
 }

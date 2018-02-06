@@ -23,20 +23,16 @@ public class User {
     @Column(name = "cpf")
     private Long cpf;
 
-    @OneToOne
-    @JoinColumn(name = "security_details_id")
+    @OneToOne(mappedBy = "user")
     private SecurityDetails securityDetails;
 
-    @OneToOne
-    @JoinColumn(name = "contact_details_id")
+    @OneToOne(mappedBy = "user")
     private ContactDetails contactDetails;
 
-    @OneToOne
-    @JoinColumn(name = "bank_details_id")
+    @OneToOne(mappedBy = "user")
     private BankDetails bankDetails;
 
-    @OneToOne
-    @JoinColumn(name = "address_details_id")
+    @OneToOne(mappedBy = "user")
     private AddressDetails addressDetails;
 
     @OneToOne(mappedBy = "user")
