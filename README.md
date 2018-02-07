@@ -2,7 +2,7 @@
 
 Esse é o repositório das APIs RESTFul da aplicação Krusty Task Manager.
 
-[![Build Status](https://travis-ci.org/victorjordan95/krusty-api.svg?branch=master)](https://travis-ci.org/victorjordan95/krusty-api)
+[![Build Status](https://travis-ci.org/victorjordan95/krusty-api.svg?branch=master)](https://travis-ci.org/victorjordan95/krusty-api) ![Built With](https://img.shields.io/badge/built%20with-IntelliJ%20IDEA-blue.svg)
 
 ------------
 
